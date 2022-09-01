@@ -1,0 +1,39 @@
+{
+	"name": "basic-crud-server",
+	"version": "0.0.1",
+	"description": "Server for the Basic CRUD Socket.IO example",
+	"main": "dist/lib/index.js",
+	"scripts": {
+		"dev": "nodemon server/lib/index.ts",
+		"build": "tsc",
+		"test": "nyc mocha --require ts-node/register ./server/test/**/*.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/socketio/socket.io.git"
+	},
+	"author": "Damien Arrachequesne <damien.arrachequesne@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/socketio/socket.io/issues"
+	},
+	"homepage": "https://github.com/socketio/socket.io#readme",
+	"dependencies": {
+		"dotenv": "^16.0.2",
+		"joi": "^17.4.0",
+		"socket.io": "^4.0.1",
+		"uuid": "^8.3.2"
+	},
+	"devDependencies": {
+		"@types/chai": "^4.2.16",
+		"@types/mocha": "^8.2.3",
+		"@types/uuid": "^8.3.0",
+		"chai": "^4.3.4",
+		"mocha": "^8.3.2",
+		"nodemon": "^2.0.19",
+		"nyc": "^15.1.0",
+		"socket.io-client": "^4.0.1",
+		"ts-node": "10.8.1",
+		"typescript": "^4.2.4"
+	}
+}
